@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+nav ul li a{
+    color:black !important;
+    text-transform: capitalize;
+}
+#cv{
+    background-color: black;
+    color: white !important;
+    border-radius: 3px;
+    padding: 7px 30px;
+}
+.about_bg{
+    background:#caaf48a8;
+
+}
+.about_bg .container-fluid{
+    background:url(../images/hero-bg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.count::after {
+    content: " +";
+    display: inline-block;
+}
+#skills img{
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+#contact img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+#contact h2{
+    font-size: 24px;
+}
+.wht {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    animation: what 2s linear infinite;
+    font-weight: bold;
+    transition: 0.5s;
+}
+@keyframes what {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@media screen and (max-width:768px){
+    .navbar-brand{
+        width: 50% !important;
+    }
+    #cv{
+        padding: 7px 10px;
+    }
+}
